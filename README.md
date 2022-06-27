@@ -21,7 +21,7 @@ A classe Operation implementa a interface CenterOp. Desta forma os métodos abst
     op1.statusOp();
 ```
 
-No exemplo citado acima vemos que uma operação não pode ter seu atributo estadoOp alterado diretamente através do método this.estadoOp( ), ela só pode ter seu estado alterado através dos métodos iniciarOp( ) e finalizarOp( ).
+No exemplo citado acima vemos que uma operação não pode ter seu atributo estadoOp alterado diretamente através do método this.setEstadoOp( ), ela só pode ter seu estado alterado através dos métodos iniciarOp( ) e finalizarOp( ).
 
 ## Abstração
 
