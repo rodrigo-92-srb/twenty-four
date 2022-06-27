@@ -1,10 +1,16 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Agente a1 = new Agente("Almeida", "Los Angeles", 109107, true);
-        //operando é privado a1.operando = true;
-        a1.status();
-        a1.operar();
-        a1.cancelarOp();
-        a1.operar();
+        //Agent a1 = new Agent("Almeida", "Los Angeles", 109107, true);
+        Operation op1 = new Operation("Presa Quebrada", 1, "Secreta");
+        op1.statusOp();
+        op1.finalizarOp();
+        op1.statusOp();
+        op1.iniciarOp();
+        op1.statusOp();
+        op1.finalizarOp();
+        op1.iniciarOp();
+        op1.statusOp();
+        /*a1.status();
+        a1.operar();*/
     }
 }

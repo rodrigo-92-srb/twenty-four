@@ -1,26 +1,27 @@
-public class Agente {
-    public String nome;
-    public String cidade;
+public class Agent {
+    private String nome;
+    private String cidade;
     protected int id;
     private boolean operando;
-    /* Atributo operando é privado pois só o agente tem acesso a essa informação 
-       desta forma, se precisamos de determinado agente, fazemos a chamada dos métodos
-       operar(), cancelarOp() ou FinalizarOp() e este método faz a modificação do 
-       atributo operando.
-    */ 
-
-    public Agente(String name, String city, int i, boolean op){
-        this.nome = name;
-        this.cidade = city;
-        this.id = i;
-        this.operando = op;
+   
+    public Agent(String name, String city, int i, boolean op){
+        this.setNome(name);
+        this.setCidade(city);
+        this.registrarAgente(i);
+        this.setOperando(op);
     }
-
+    
+    public void registrarAgente(int id){
+        this.setId(id);
+    }
+    
     public void status(){
-        System.out.println("Identificação: "+ this.id);
-        System.out.println("Nome: "+ this.nome);
-        System.out.println("Cidade: "+ this.cidade);
-        System.out.println("Em operação? " + this.operando);
+        System.out.println("-----------------------------");
+        System.out.println("Identificação: "+ this.getId());
+        System.out.println("Nome: "+ this.getNome());
+        System.out.println("Cidade: "+ this.getCidade());
+        System.out.println("Em operação? " + this.isOperando());
+        System.out.println("-----------------------------");
     }
 
     protected void operar(){
