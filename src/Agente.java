@@ -9,6 +9,13 @@ public class Agente {
        atributo operando.
     */ 
 
+    public Agente(String name, String city, int i, boolean op){
+        this.nome = name;
+        this.cidade = city;
+        this.id = i;
+        this.operando = op;
+    }
+
     public void status(){
         System.out.println("Identificação: "+ this.id);
         System.out.println("Nome: "+ this.nome);
@@ -36,4 +43,38 @@ public class Agente {
         this.operando=false;
         System.out.println("Entendido. Agente finalizou operação.");
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public boolean isOperando() {
+        return operando;
+    }
+
+    public void setOperando(boolean operando) {
+        this.operando = operando;
+    }
+
+    
 }
