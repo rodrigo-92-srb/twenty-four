@@ -1,3 +1,9 @@
+# Twenty Four
+
+![img](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/24-Logo.svg/250px-24-Logo.svg.png)
+
+Aplicação baseada na série 24 horas, para aplicar conceitos básicos de orientação a objetos com a linguagem Java. 
+
 ## Visibilidade
 
 Um exemplo de visibilidade presente no projeto é o atributo operando que é privado, só o agente tem acesso a essa informação. Desta forma, se precisamos de determinado agente, fazemos a chamada dos métodos operar( ), cancelarOp( ) ou finalizarOp( ) e estes métodos fazem a modificação do atributo operando. 
