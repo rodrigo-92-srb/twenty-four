@@ -1,6 +1,7 @@
-## Getting Started
+## Visibilidade (Encapsulamento)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Um exemplo de encapsulamento presente no projeto é o atributo operando que é privado, só o agente tem acesso a essa informação. Desta forma, se precisamos de determinado agente, fazemos a chamada dos métodos operar(), cancelarOp() ou FinalizarOp() e estes métodos fazem a modificação do atributo operando. 
+
 
 ## Folder Structure
 
