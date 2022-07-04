@@ -40,7 +40,7 @@ public class Agent {
         System.out.println("Entendido. Agente cancelou operação.");
     }
 
-    protected void FinalizarOp(){
+    protected void finalizarOp(){
         this.operando=false;
         System.out.println("Entendido. Agente finalizou operação.");
     }
