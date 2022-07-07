@@ -46,7 +46,7 @@ Um exemplo de abstração pode ser visto na classe Unit onde os métodos e atrib
 
 ## Herança
 
-O conceito de herança foi aplicado na classe UCT em que a mesma herda os atributos e métodos da classe Unit. Além disso a classe UCT possui o atributo bombasDesarmadas e os métodos desarmarBomba.
+O conceito de herança foi aplicado na classe UCT em que a mesma herda os atributos e métodos da classe Unit. Além disso a classe UCT possui o atributo bombasDesarmadas e o método desarmarBomba.
 
 ## Polimorfismo
 
