@@ -15,6 +15,17 @@ Os métodos getters e setters auxiliam na proteção dos atributos da classe uma
 e/ou alterados diretamente, só através de métodos.
 
 
+# Pilares da Orientação a Objetos
+
+Os pilares da orientação a objetos são:
+
+- Encapsulamento
+- Abstração
+- Herança
+- Polimorfismo
+
+Segue abaixo a explicação de como cada pilar foi implementado:
+
 ## Encapsulamento
 
 A classe Operation implementa a interface CenterOp. Desta forma os métodos abstratos da interface são implementados na classe, conseguindo desta forma proteger os atributos e métodos privados da classe. Uma vez que os estes só poderão ser acessados ou alterados através da interface. Como podemos ver no exemplo abaixo: 
@@ -39,4 +50,9 @@ O conceito de herança foi aplicado na classe UCT em que a mesma herda os atribu
 
 ## Polimorfismo
 
+Existem 2 tipos de polimorfismo: de sobreposição e de sobrecarga.
+
+- Polimorfismo de sobreposição é usado para métodos com a mesma assinatura, mas em classes diferentes. Desta forma, neste projeto o polimorfismo de sobreposição foi usado nas classes Vehicle, Air(veículo áereo), Land(veículo terrestre) e Sea(veículo marítimo). Sendo que os métodos abstratos da classe abstrata Vehicle são sobrepostos pelos métodos das classes Air, Land e Sea. 
+
+- Polimorfismo de sobreposição é usado para métodos com assinaturas diferentes dentro de uma mesma classe. Desta forma, foi utilizado na classe Air nos métodos indetificarAlvo(), em que um dos métodos recebe como parâmetro o nome de um suspeito e o outro método não recebe nenhum parâmetro.
 
