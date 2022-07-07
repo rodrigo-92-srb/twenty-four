@@ -11,9 +11,20 @@ Um exemplo de visibilidade presente no projeto é o atributo operando que é pri
 
 ## Getter, Setter e Construtor
 
-Os métodos getters e setters auxiliam na proteção dos atributos da classe uma vez que os atributos não podem ser acessados 
+Os métodos getters e setters auxiliam na proteção dos atributos da classe uma vez que os atributos privados não podem ser acessados 
 e/ou alterados diretamente, só através de métodos.
 
+
+# Pilares da Orientação a Objetos
+
+Os pilares da orientação a objetos são:
+
+- Encapsulamento
+- Abstração
+- Herança
+- Polimorfismo
+
+Segue abaixo a explicação de como cada pilar foi implementado:
 
 ## Encapsulamento
 
@@ -31,6 +42,17 @@ No exemplo citado acima vemos que uma operação não pode ter seu atributo esta
 
 ## Abstração
 
-Um exemplo de abstração pode ser visto na classe principal onde os métodos iniciarOp( ) e finalizarOp( ) são chamados e não é necessário saber como esses métodos funcionam internamente para alterar o estado da classe Operation.
+Um exemplo de abstração pode ser visto na classe Unit onde os métodos e atributos são usados pela classe filha UCT e não é necessário saber como esses métodos funcionam internamente para utilizá-los na classe UCT. Além disso uma classe abstrata, no caso Unit não pode ser instanciada, pode apenas gerar classes filha.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Herança
+
+O conceito de herança foi aplicado na classe UCT em que a mesma herda os atributos e métodos da classe Unit. Além disso a classe UCT possui o atributo bombasDesarmadas e os métodos desarmarBomba.
+
+## Polimorfismo
+
+Existem 2 tipos de polimorfismo: de sobreposição e de sobrecarga.
+
+- Polimorfismo de sobreposição é usado para métodos com a mesma assinatura, mas em classes diferentes. Desta forma, neste projeto o polimorfismo de sobreposição foi usado nas classes Vehicle, Air(veículo áereo), Land(veículo terrestre) e Sea(veículo marítimo). Sendo que os métodos abstratos da classe abstrata Vehicle são sobrepostos pelos métodos das classes Air, Land e Sea. 
+
+- Polimorfismo de sobreposição é usado para métodos com assinaturas diferentes dentro de uma mesma classe. Desta forma, foi utilizado na classe Air nos métodos indetificarAlvo(), em que um dos métodos recebe como parâmetro o nome de um suspeito e o outro método não recebe nenhum parâmetro.
+
