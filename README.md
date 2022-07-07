@@ -11,7 +11,7 @@ Um exemplo de visibilidade presente no projeto é o atributo operando que é pri
 
 ## Getter, Setter e Construtor
 
-Os métodos getters e setters auxiliam na proteção dos atributos da classe uma vez que os atributos não podem ser acessados 
+Os métodos getters e setters auxiliam na proteção dos atributos da classe uma vez que os atributos privados não podem ser acessados 
 e/ou alterados diretamente, só através de métodos.
 
 
@@ -31,6 +31,12 @@ No exemplo citado acima vemos que uma operação não pode ter seu atributo esta
 
 ## Abstração
 
-Um exemplo de abstração pode ser visto na classe principal onde os métodos iniciarOp( ) e finalizarOp( ) são chamados e não é necessário saber como esses métodos funcionam internamente para alterar o estado da classe Operation.
+Um exemplo de abstração pode ser visto na classe Unit onde os métodos e atributos são usados pela classe filha UCT e não é necessário saber como esses métodos funcionam internamente para utilizá-los na classe UCT. Além disso uma classe abstrata, no caso Unit não pode ser instanciada, pode apenas gerar classes filha.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Herança
+
+O conceito de herança foi aplicado na classe UCT em que a mesma herda os atributos e métodos da classe Unit. Além disso a classe UCT possui o atributo bombasDesarmadas e os métodos desarmarBomba.
+
+## Polimorfismo
+
+
