@@ -1,9 +1,9 @@
 public class App {
     public static void main(String[] args) throws Exception {
         Agent a1 = new Agent("Almeida", "Los Angeles", 109107, true);
-        UCT u1 = new UCT("UCT1", 5, 3);
+        UCT u1 = new UCT("UCT-1", 5, 3);
 
-        u1.toString();
+        System.out.println(u1.toString()); 
         u1.DesarmarBomba();
 
         a1.status();

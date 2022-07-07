@@ -21,12 +21,6 @@ public class UCT extends Unit{
     public void setBombasDesarmadas(int bombasDesarmadas) {
         this.bombasDesarmadas = bombasDesarmadas;
     }
-
-    @Override
-    public String toString() {
-        return "UCT [bombasDesarmadas=" + bombasDesarmadas + "]";
-    }
-
     
     
 }

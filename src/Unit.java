@@ -1,4 +1,4 @@
-public class Unit {
+public abstract class Unit {
     private String nome;
     private int capacidade;
     private String status;
@@ -49,7 +49,7 @@ public class Unit {
 
     @Override
     public String toString() {
-        return "Unit [capacidade=" + capacidade + ", nome=" + nome + ", status=" + status + "]";
+        return "Unit [capacidade:" + capacidade + ", nome:" + nome + ", status:" + status + "]";
     }
 
     
