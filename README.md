@@ -54,5 +54,5 @@ Existem 2 tipos de polimorfismo: de sobreposição e de sobrecarga.
 
 - Polimorfismo de sobreposição é usado para métodos com a mesma assinatura, mas em classes diferentes. Desta forma, neste projeto o polimorfismo de sobreposição foi usado nas classes Vehicle, Air(veículo áereo), Land(veículo terrestre) e Sea(veículo marítimo). Sendo que os métodos abstratos da classe abstrata Vehicle são sobrepostos pelos métodos das classes Air, Land e Sea. 
 
-- Polimorfismo de sobreposição é usado para métodos com assinaturas diferentes dentro de uma mesma classe. Desta forma, foi utilizado na classe Air nos métodos indetificarAlvo(), em que um dos métodos recebe como parâmetro o nome de um suspeito e o outro método não recebe nenhum parâmetro.
+- Polimorfismo de sobrecarga é usado para métodos com assinaturas diferentes dentro de uma mesma classe. Desta forma, foi utilizado na classe Air nos métodos indetificarAlvo(), em que um dos métodos recebe como parâmetro o nome de um suspeito e o outro método não recebe nenhum parâmetro.
 
